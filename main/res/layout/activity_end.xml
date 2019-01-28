@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".End">
+
+    <TextView
+        android:id="@+id/Scoring"
+        android:layout_width="300dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="44dp"
+        android:text="TextView"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Your Score is:" />
+
+    <Button
+        android:id="@+id/NewTest"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="208dp"
+        android:text="New Category"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Scoring" />
+
+    <Button
+        android:id="@+id/Iyaz"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="22dp"
+        android:text="Replay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Exit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NewTest" />
+
+    <Button
+        android:id="@+id/Exit"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="2dp"
+        android:text="Bye Bye"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Review"
+        tools:text="Exit" />
+
+    <Button
+        android:id="@+id/Review"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="211dp"
+        android:layout_marginEnd="2dp"
+        android:text="Review"
+        app:layout_constraintBottom_toTopOf="@+id/Exit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Scoring" />
+
+</android.support.constraint.ConstraintLayout>
